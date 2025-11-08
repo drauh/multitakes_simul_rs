@@ -1,0 +1,243 @@
+===== Experiment batch @ 2025-11-08T17:12:16.661470+00:00 (runs=10000) =====
+
+--- complete sequential (stopping=complete, policy=sequential) ---
+    Finished `release` profile [optimized] target(s) in 0.03s
+     Running `multitakes_simul_rs --runs 10000 --stopping complete --policy sequential`
+
+
+========================================
+      MONTE CARLO SUMMARY
+========================================
+Runs: 10000
+Initial tasks per candidate: 20
+Average simulation games: 1221225
+Average games to first winner: 442136
+Average true Elo of selected winner: 1.28
+Average positive completions per run: 3.00 (6.79 per M games)
+corradj4 selected 7165/10000 times (71.7%)
+All candidates hit the lower bound in 1/10000 runs (0.0%).
+Winner distribution:
+  corradj4  : 7165 (71.7%)
+  corradj1  : 1279 (12.8%)
+  corradj3  : 585 (5.9%)
+  corradj5  : 534 (5.3%)
+  corradj7  : 435 (4.3%)
+  corradj6  : 1 (0.0%)
+  all_lower : 1 (0.0%)
+
+Candidate | Average ELO/CI/LLR/Games                        | Completion ELO/CI/LLR/Games                     | True Elo
+----------+-------------------------------------------------+-------------------------------------------------+---------
+corradj1  | ELO=  0.81 [ -0.18,  1.78] LLR=  1.66 G= 235350 | ELO=  0.81 [ -0.18,  1.78] LLR=  1.66 G= 235350 |     0.73
+corradj2  | ELO= -2.76 [ -4.90, -0.60] LLR= -2.98 G=  29658 | ELO= -2.76 [ -4.90, -0.60] LLR= -2.98 G=  29658 |    -2.59
+corradj3  | ELO=  0.47 [ -0.48,  1.41] LLR= -0.32 G= 268501 | ELO=  0.47 [ -0.48,  1.41] LLR= -0.32 G= 268501 |     0.48
+corradj4  | ELO=  1.72 [  0.34,  3.07] LLR=  2.95 G=  88307 | ELO=  1.72 [  0.34,  3.07] LLR=  2.95 G=  88307 |     1.56
+corradj5  | ELO=  0.43 [ -0.52,  1.39] LLR= -0.56 G= 270329 | ELO=  0.43 [ -0.52,  1.39] LLR= -0.56 G= 270329 |     0.46
+corradj6  | ELO= -1.04 [ -2.54,  0.49] LLR= -2.97 G=  66647 | ELO= -1.04 [ -2.54,  0.49] LLR= -2.97 G=  66647 |    -0.87
+corradj7  | ELO=  0.39 [ -0.55,  1.33] LLR= -0.75 G= 262433 | ELO=  0.39 [ -0.55,  1.33] LLR= -0.75 G= 262433 |     0.43
+
+--- ucb-dominance seq (stopping=ucb-dominance, policy=sequential) ---
+    Finished `release` profile [optimized] target(s) in 0.03s
+     Running `multitakes_simul_rs --runs 10000 --stopping ucb-dominance --policy sequential`
+
+
+========================================
+      MONTE CARLO SUMMARY
+========================================
+Runs: 10000
+Initial tasks per candidate: 20
+Average simulation games: 675409
+Average games to first winner: 444112
+Average true Elo of selected winner: 1.28
+Average positive completions per run: 1.86 (4.20 per M games)
+corradj4 selected 7198/10000 times (72.0%)
+All candidates hit the lower bound in 1/10000 runs (0.0%).
+Winner distribution:
+  corradj4  : 7198 (72.0%)
+  corradj1  : 1216 (12.2%)
+  corradj3  : 580 (5.8%)
+  corradj5  : 544 (5.4%)
+  corradj7  : 458 (4.6%)
+  corradj6  : 3 (0.0%)
+  all_lower : 1 (0.0%)
+
+Candidate | Average ELO/CI/LLR/Games                        | Completion ELO/CI/LLR/Games                     | True Elo
+----------+-------------------------------------------------+-------------------------------------------------+---------
+corradj1  | ELO=  0.74 [ -0.49,  1.96] LLR=  0.85 G= 125340 | ELO=  1.02 [ -0.13,  2.15] LLR=  1.90 G= 158343 |     0.73
+corradj2  | ELO= -2.80 [ -4.96, -0.62] LLR= -2.94 G=  28981 | ELO= -2.85 [ -5.02, -0.67] LLR= -2.98 G=  28874 |    -2.59
+corradj3  | ELO=  0.45 [ -0.78,  1.68] LLR= -0.11 G= 126162 | ELO=  0.52 [ -0.62,  1.65] LLR=  0.15 G= 167777 |     0.48
+corradj4  | ELO=  1.70 [  0.29,  3.07] LLR=  2.79 G=  83956 | ELO=  1.76 [  0.36,  3.13] LLR=  2.96 G=  84957 |     1.56
+corradj5  | ELO=  0.41 [ -0.83,  1.66] LLR= -0.23 G= 127833 | ELO=  0.45 [ -0.70,  1.60] LLR= -0.10 G= 173383 |     0.46
+corradj6  | ELO= -1.00 [ -2.58,  0.60] LLR= -2.60 G=  58726 | ELO= -1.20 [ -2.78,  0.40] LLR= -2.97 G=  59400 |    -0.87
+corradj7  | ELO=  0.39 [ -0.84,  1.61] LLR= -0.34 G= 124412 | ELO=  0.37 [ -0.76,  1.51] LLR= -0.40 G= 165985 |     0.43
+
+--- ucb-dominance ucb (stopping=ucb-dominance, policy=ucb) ---
+    Finished `release` profile [optimized] target(s) in 0.03s
+     Running `multitakes_simul_rs --runs 10000 --stopping ucb-dominance --policy ucb`
+
+
+========================================
+      MONTE CARLO SUMMARY
+========================================
+Runs: 10000
+Initial tasks per candidate: 20
+Average simulation games: 385648
+Average games to first winner: 209283
+Average true Elo of selected winner: 1.24
+Average positive completions per run: 1.56 (7.47 per M games)
+corradj4 selected 6829/10000 times (68.3%)
+All candidates hit the lower bound in 2/10000 runs (0.0%).
+Winner distribution:
+  corradj4  : 6829 (68.3%)
+  corradj1  : 1324 (13.2%)
+  corradj3  : 678 (6.8%)
+  corradj5  : 608 (6.1%)
+  corradj7  : 558 (5.6%)
+  all_lower : 2 (0.0%)
+  corradj6  : 1 (0.0%)
+
+Candidate | Average ELO/CI/LLR/Games                        | Completion ELO/CI/LLR/Games                     | True Elo
+----------+-------------------------------------------------+-------------------------------------------------+---------
+corradj1  | ELO= -0.69 [ -3.37,  1.97] LLR=  0.55 G=  77406 | ELO=  1.27 [  0.12,  2.40] LLR=  2.58 G= 162620 |     0.73
+corradj2  | ELO= -4.31 [ -9.83,  1.19] LLR= -0.65 G=   6470 | ELO= -1.79 [ -3.61,  0.05] LLR= -2.98 G=  42319 |    -2.59
+corradj3  | ELO= -1.01 [ -3.87,  1.84] LLR= -0.05 G=  73932 | ELO=  1.09 [  0.01,  2.16] LLR=  1.60 G= 206579 |     0.48
+corradj4  | ELO=  1.00 [ -0.94,  2.92] LLR=  2.36 G=  70255 | ELO=  1.84 [  0.41,  3.24] LLR=  2.97 G=  80916 |     1.56
+corradj5  | ELO= -1.11 [ -4.05,  1.82] LLR= -0.15 G=  72958 | ELO=  1.03 [ -0.04,  2.07] LLR=  1.31 G= 218334 |     0.46
+corradj6  | ELO= -2.69 [ -6.90,  1.51] LLR= -0.76 G=  16600 | ELO= -0.27 [ -1.44,  0.93] LLR= -2.89 G= 107569 |    -0.87
+corradj7  | ELO= -1.10 [ -4.03,  1.81] LLR= -0.16 G=  68028 | ELO=  1.05 [ -0.02,  2.10] LLR=  1.36 G= 206850 |     0.43
+
+--- ucb-dominance thompson (stopping=ucb-dominance, policy=thompson) ---
+    Finished `release` profile [optimized] target(s) in 0.03s
+     Running `multitakes_simul_rs --runs 10000 --stopping ucb-dominance --policy thompson`
+
+
+========================================
+      MONTE CARLO SUMMARY
+========================================
+Runs: 10000
+Initial tasks per candidate: 20
+Average simulation games: 488182
+Average games to first winner: 244227
+Average true Elo of selected winner: 1.27
+Average positive completions per run: 1.75 (7.15 per M games)
+corradj4 selected 7111/10000 times (71.1%)
+All candidates hit the lower bound in 1/10000 runs (0.0%).
+Winner distribution:
+  corradj4  : 7111 (71.1%)
+  corradj1  : 1265 (12.7%)
+  corradj3  : 602 (6.0%)
+  corradj5  : 562 (5.6%)
+  corradj7  : 457 (4.6%)
+  corradj6  : 2 (0.0%)
+  all_lower : 1 (0.0%)
+
+Candidate | Average ELO/CI/LLR/Games                        | Completion ELO/CI/LLR/Games                     | True Elo
+----------+-------------------------------------------------+-------------------------------------------------+---------
+corradj1  | ELO=  0.11 [ -1.72,  1.92] LLR=  0.69 G=  97299 | ELO=  1.24 [  0.09,  2.36] LLR=  2.49 G= 160537 |     0.73
+corradj2  | ELO= -3.80 [ -7.75,  0.14] LLR= -1.20 G=  11963 | ELO= -1.63 [ -3.40,  0.16] LLR= -2.98 G=  42803 |    -2.59
+corradj3  | ELO= -0.28 [ -2.25,  1.68] LLR= -0.10 G=  92179 | ELO=  1.00 [ -0.07,  2.06] LLR=  1.34 G= 194816 |     0.48
+corradj4  | ELO=  1.51 [ -0.03,  3.02] LLR=  2.65 G=  78969 | ELO=  1.79 [  0.38,  3.17] LLR=  2.97 G=  83503 |     1.56
+corradj5  | ELO= -0.31 [ -2.29,  1.68] LLR= -0.20 G=  91657 | ELO=  0.95 [ -0.13,  2.03] LLR=  1.07 G= 197400 |     0.46
+corradj6  | ELO= -1.94 [ -4.83,  0.95] LLR= -1.28 G=  28325 | ELO= -0.62 [ -1.95,  0.74] LLR= -2.96 G=  81633 |    -0.87
+corradj7  | ELO= -0.38 [ -2.39,  1.62] LLR= -0.26 G=  87790 | ELO=  0.90 [ -0.15,  1.95] LLR=  0.98 G= 199330 |     0.43
+
+--- first seq (stopping=stop-at-first, policy=sequential) ---
+    Finished `release` profile [optimized] target(s) in 0.04s
+     Running `multitakes_simul_rs --runs 10000 --stopping stop-at-first --policy sequential`
+
+
+========================================
+      MONTE CARLO SUMMARY
+========================================
+Runs: 10000
+Initial tasks per candidate: 20
+Average simulation games: 441412
+Average games to first winner: 441412
+Average true Elo of selected winner: 1.28
+Average positive completions per run: 1.00 (2.27 per M games)
+corradj4 selected 7235/10000 times (72.4%)
+Winner distribution:
+  corradj4  : 7235 (72.4%)
+  corradj1  : 1196 (12.0%)
+  corradj3  : 564 (5.6%)
+  corradj5  : 519 (5.2%)
+  corradj7  : 484 (4.8%)
+  corradj6  : 2 (0.0%)
+
+Candidate | Average ELO/CI/LLR/Games                        | Completion ELO/CI/LLR/Games                     | True Elo
+----------+-------------------------------------------------+-------------------------------------------------+---------
+corradj1  | ELO=  0.75 [ -0.68,  2.17] LLR=  0.50 G=  72878 | ELO=  1.20 [ -0.23,  2.61] LLR=  1.53 G=  78204 |     0.73
+corradj2  | ELO= -2.75 [ -4.91, -0.58] LLR= -2.91 G=  29084 | ELO= -2.85 [ -5.03, -0.67] LLR= -2.98 G=  28744 |    -2.59
+corradj3  | ELO=  0.48 [ -0.95,  1.91] LLR= -0.06 G=  71463 | ELO=  0.38 [ -1.06,  1.83] LLR= -0.30 G=  74313 |     0.48
+corradj4  | ELO=  1.70 [  0.25,  3.14] LLR=  2.49 G=  74231 | ELO=  1.92 [  0.45,  3.38] LLR=  2.96 G=  74021 |     1.56
+corradj5  | ELO=  0.44 [ -1.01,  1.90] LLR= -0.16 G=  71315 | ELO=  0.21 [ -1.25,  1.68] LLR= -0.62 G=  74882 |     0.46
+corradj6  | ELO= -1.00 [ -2.65,  0.67] LLR= -2.32 G=  51302 | ELO= -1.42 [ -3.09,  0.27] LLR= -2.97 G=  50945 |    -0.87
+corradj7  | ELO=  0.42 [ -1.01,  1.86] LLR= -0.18 G=  71139 | ELO=  0.15 [ -1.30,  1.60] LLR= -0.71 G=  73159 |     0.43
+
+--- first thompson (stopping=stop-at-first, policy=thompson) ---
+    Finished `release` profile [optimized] target(s) in 0.03s
+     Running `multitakes_simul_rs --runs 10000 --stopping stop-at-first --policy thompson`
+
+
+========================================
+      MONTE CARLO SUMMARY
+========================================
+Runs: 10000
+Initial tasks per candidate: 20
+Average simulation games: 242345
+Average games to first winner: 242275
+Average true Elo of selected winner: 1.25
+Average positive completions per run: 1.00 (4.13 per M games)
+corradj4 selected 6868/10000 times (68.7%)
+All candidates hit the lower bound in 1/10000 runs (0.0%).
+Winner distribution:
+  corradj4  : 6868 (68.7%)
+  corradj1  : 1349 (13.5%)
+  corradj3  : 614 (6.1%)
+  corradj5  : 585 (5.9%)
+  corradj7  : 580 (5.8%)
+  corradj6  : 3 (0.0%)
+  all_lower : 1 (0.0%)
+
+Candidate | Average ELO/CI/LLR/Games                        | Completion ELO/CI/LLR/Games                     | True Elo
+----------+-------------------------------------------------+-------------------------------------------------+---------
+corradj1  | ELO= -0.14 [ -2.67,  2.39] LLR=  0.33 G=  44183 | ELO=  1.75 [  0.36,  3.12] LLR=  2.88 G=  88223 |     0.73
+corradj2  | ELO= -3.89 [ -8.55,  0.75] LLR= -0.82 G=   8127 | ELO= -1.34 [ -3.02,  0.35] LLR= -2.99 G=  46288 |    -2.59
+corradj3  | ELO= -0.49 [ -3.22,  2.24] LLR= -0.05 G=  37168 | ELO=  1.72 [  0.32,  3.09] LLR=  2.66 G=  89105 |     0.48
+corradj4  | ELO=  1.30 [ -0.51,  3.08] LLR=  2.11 G=  63308 | ELO=  1.94 [  0.46,  3.39] LLR=  2.97 G=  74061 |     1.56
+corradj5  | ELO= -0.56 [ -3.36,  2.23] LLR= -0.08 G=  37365 | ELO=  1.75 [  0.33,  3.14] LLR=  2.67 G=  86162 |     0.46
+corradj6  | ELO= -2.05 [ -5.70,  1.59] LLR= -0.73 G=  16201 | ELO= -0.44 [ -1.82,  0.96] LLR= -2.34 G=  74414 |    -0.87
+corradj7  | ELO= -0.56 [ -3.33,  2.20] LLR= -0.08 G=  35994 | ELO=  1.71 [  0.32,  3.06] LLR=  2.70 G=  90316 |     0.43
+
+--- first ucb (stopping=stop-at-first, policy=ucb) ---
+    Finished `release` profile [optimized] target(s) in 0.03s
+     Running `multitakes_simul_rs --runs 10000 --stopping stop-at-first --policy ucb`
+
+
+========================================
+      MONTE CARLO SUMMARY
+========================================
+Runs: 10000
+Initial tasks per candidate: 20
+Average simulation games: 210280
+Average games to first winner: 210200
+Average true Elo of selected winner: 1.22
+Average positive completions per run: 1.00 (4.76 per M games)
+corradj4 selected 6597/10000 times (66.0%)
+All candidates hit the lower bound in 1/10000 runs (0.0%).
+Winner distribution:
+  corradj4  : 6597 (66.0%)
+  corradj1  : 1492 (14.9%)
+  corradj3  : 681 (6.8%)
+  corradj5  : 628 (6.3%)
+  corradj7  : 601 (6.0%)
+  all_lower : 1 (0.0%)
+
+Candidate | Average ELO/CI/LLR/Games                        | Completion ELO/CI/LLR/Games                     | True Elo
+----------+-------------------------------------------------+-------------------------------------------------+---------
+corradj1  | ELO= -0.85 [ -4.28,  2.56] LLR=  0.29 G=  40394 | ELO=  1.55 [  0.26,  2.82] LLR=  2.73 G= 124894 |     0.73
+corradj2  | ELO= -4.13 [-10.13,  1.84] LLR= -0.50 G=   5092 | ELO= -2.02 [ -3.92, -0.11] LLR= -2.96 G=  38325 |    -2.59
+corradj3  | ELO= -1.22 [ -4.95,  2.49] LLR= -0.05 G=  31561 | ELO=  1.55 [  0.24,  2.84] LLR=  2.23 G= 130423 |     0.48
+corradj4  | ELO=  0.74 [ -1.56,  3.02] LLR=  1.91 G=  56722 | ELO=  1.94 [  0.46,  3.40] LLR=  2.97 G=  73982 |     1.56
+corradj5  | ELO= -1.25 [ -5.00,  2.48] LLR= -0.07 G=  32754 | ELO=  1.47 [  0.20,  2.72] LLR=  2.16 G= 145678 |     0.46
+corradj6  | ELO= -2.59 [ -7.45,  2.25] LLR= -0.48 G=  10856 | ELO= -0.52 [ -1.79,  0.79] LLR= -2.98 G=  92087 |    -0.87
+corradj7  | ELO= -1.21 [ -4.92,  2.48] LLR= -0.08 G=  32901 | ELO=  1.42 [  0.18,  2.64] LLR=  2.05 G= 155893 |     0.43
